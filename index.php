@@ -34,9 +34,9 @@
     </div>
 <?php
     $host = 'localhost';
-    $dbname = 'test';
+    $dbname = 'postgresql-cubic-62585';
     $username = 'postgres';
-    $password = 'postgres';
+    $password = '';
  
   $dsn = "pgsql:host=$host;port=5432;dbname=$dbname;user=$username;password=$password";
    
