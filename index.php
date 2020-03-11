@@ -35,7 +35,7 @@
 <?php
 $dbconn = pg_connect("dbname=postgresql-cubic-62585");
 if ($dbconn)
-	printf("établie );
+printf("établie );
 	
 
 ?>
