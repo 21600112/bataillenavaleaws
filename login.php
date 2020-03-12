@@ -2,7 +2,7 @@
 session_start();
 if(isset($_SESSION['email'])){
 	
-	  header('location:index.html');
+	  header('location:profil.php');
 	
 	}
 
@@ -27,7 +27,7 @@ if($count > 0){
 $_SESSION['email']=$mail; 
 $_SESSION['uid']=$row['id']; 
 
-header('location:index.html');
+header('location:profil.php');
 
 }
 

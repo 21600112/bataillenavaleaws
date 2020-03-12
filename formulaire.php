@@ -9,12 +9,6 @@ $prenom = $_POST['prenom'];
 $email = $_POST['email'];
 
 
-
-
-
-
-
-
 if(!empty($nom) AND !empty($prenom)AND !empty($password) AND !empty($email) ){
  $stmt=$db->prepare("INSERT INTO joueur(nom,prenom,password,email)
  	           VALUES (:wnom,:wprenom,:wpss,:wemail);
