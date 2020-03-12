@@ -32,6 +32,19 @@
         </nav>
 
     </div>
+<?php
+$conn = pg_connect(getenv("postgres: // tefjmilbfnzmcm : 34e2bac98f0051d3708ffaadbcb359afcd1f5f8b871ff0dc462227e09b938893 @ ec2-54-217-204-34.eu-west-1.compute.amazonaws.com : 5432 / dbtdg"));
+   if($conn) {echo "connected";} else {echo "not connected";}
+   $selectSql = "SELECT * FROM PLAYER ";   
+$result =  pg_query($db, $selectSql);
+
+while ($row = pg_fetch_row($result)) {
+    $id = $row["id"];
+    $name = $row["name"];
+    echo "<br>id: ".$id;
+    echo "<br>name: ".$name;
+}
+    ?>
 
 
     <h1> Bataille Navale </h1>
